@@ -1,11 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio: Irina Dedova</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио Frontend-разработчика – Ирина Дедова</title>
+  <meta name="description" content="Портфолио frontend-разработчика Ирины Дедовой: коммерческие и учебные проекты, образование, языки и технологический стек." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
+  <main class="page">
+    <header class="header" id="top">
+      <div class="header-content">
+        <div>
+          <h1 class="header-title">Irina Dedova</h1>
+          <p class="header-subtitle">Frontend-разработчик · HTML · CSS/SCSS · JavaScript · React · TypeScript</p>
+        </div>
+        <div class="header-badges">
+          <span class="badge">Удаленный формат работы</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-link nav-link-primary" href="#projects">Проекты</a>
+      <a class="nav-link" href="#experience">Опыт</a>
+      <a class="nav-link" href="#education">Образование</a>
+      <a class="nav-link" href="#languages">Языки</a>
+      <a class="nav-link" href="#contact">Контакты</a>
+    </nav>
+
+    <section class="hero scroll-animate">
+      <div>
+        <h2 class="hero-title">
+          Обо мне
+        </h2>
+        <p class="hero-text">
+          Я frontend-разработчик с опытом коммерческой разработки и учебными проектами, включая SPA и сайты с API-интеграциями. Уверенно работаю с <strong>HTML, CSS/SCSS и JavaScript,</strong> разрабатываю клиентские приложения на <strong>React + TypeScript</strong>, внимательно отношусь к верстке и адаптивности.
+        </p>
+        <p class="hero-text">
+          Сейчас обучаюсь в магистратуре по направлению «Информационные системы», что помогает мне лучше понимать принципы разработки и устройство программного обеспечения.
+          Ценю аккуратный код, командную работу и постоянное развитие. 
+        </p>
+        <p class="hero-text">
+          Быстро учусь и легко адаптируюсь к новым задачам. Предыдущий профессиональный опыт помогает мне ответственно подходить к работе и учитывать не только техническую, но и продуктовую составляющую.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag"><strong>Основы:</strong> HTML · CSS (SCSS) · JavaScript · TypeScript</span>
+          <span class="hero-tag"><strong>Фреймворки:</strong> React</span>
+          <span class="hero-tag"><strong>Инструменты:</strong> REST API · Jest · Git · Figma</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" onclick="scrollToSection('projects')">
+            Смотреть проекты →
+          </button>
+          <button class="btn btn-secondary" type="button" onclick="scrollToSection('contact')">
+            Связаться со мной
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scroll-animate" id="experience">
+      <p class="section-title">Commercial experience</p>
+      <h2 class="section-heading">Одностраничный сайт‑портфолио преподавателя</h2>
+      <p class="section-subheading">Full cycle: from Figma to production</p>
+      <p>
+        Адаптивный лендинг с переключением языков (en/ru), формой обратной связи и плавной
+        навигацией. Полный цикл: работа с макетом Figma, верстка, логика на JavaScript,
+        деплой.
+      </p>
+      <div class="project-meta" style="margin-top: 16px;">
+        <span>HTML · SCSS · JavaScript</span>
+        <span>Responsive layout</span>
+        <span>i18n (ru/en)</span>
+        <span>Contact form</span>
+      </div>
+      <div style="margin-top: 16px;">
+        <a class="project-link" href="https://greekandenglish.com/">
+          Сайт портфолио преподавателя →
+        </a>
+      </div>
+    </section>
+
+    <section class="section scroll-animate" id="projects">
+      <p class="section-title">Избранные проекты</p>
+      <h2 class="section-heading">Проекты</h2>
+      <p class="section-subheading">Учебные проекты - с фокусом на UX и качество кода</p>
+      <ul class="project-list">
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">eCommerce Application</h3>
+            <span class="project-pill">SPA · React · TypeScript</span>
+          </div>
+          <p class="project-tagline">
+            Интернет‑магазин с авторизацией, поиском, фильтрами, корзиной и оформлением
+            заказа. Работа с REST API и платформой CommerceTools.
+          </p>
+          <div class="project-meta">
+            <span>React · TypeScript · SCSS</span>
+            <span>REST API · CommerceTools</span>
+            <span>Jest tests</span>
+            <span>Командная разработка · Code review</span>
+          </div>
+          <a class="project-link" href="https://github.com/Ir4D/eCommerce-Application" target="_blank" rel="noreferrer">
+            GitHub →
+          </a>
+        </li>
+
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">Momentum</h3>
+            <span class="project-pill">Дашборд‑виджет</span>
+          </div>
+          <p class="project-tagline">
+            Дашборд‑виджет на JavaScript с часами, сменой фонового изображения, погодой,
+            аудиоплеером и генератором цитат. Локальное хранилище.
+          </p>
+          <div class="project-meta">
+            <span>JavaScript</span>
+            <span>OpenWeather API</span>
+            <span>LocalStorage</span>
+          </div>
+          <a class="project-link" href="https://ir4d-momentum.netlify.app/" target="_blank" rel="noreferrer">
+            Live →
+          </a>
+        </li>
+
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">Shelter</h3>
+            <span class="project-pill">Адаптивная верстка</span>
+          </div>
+          <p class="project-tagline">
+            Адаптивный сайт на HTML, CSS и JavaScript: Pixel Perfect верстка, бургер‑меню,
+            адаптивная сетка.
+          </p>
+          <div class="project-meta">
+            <span>HTML · CSS · JavaScript</span>
+            <span>Pixel Perfect</span>
+            <span>Responsive layout</span>
+          </div>
+          <a class="project-link" href="https://ir4d.github.io/shelter" target="_blank" rel="noreferrer">
+            Live →
+          </a>
+        </li>
+
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">Minesweeper</h3>
+            <span class="project-pill">Браузерная игра</span>
+          </div>
+          <p class="project-tagline">
+            Браузерная игра «Сапер» на JavaScript и CSS: генерация мин и игрового поля,
+            таймер, система флагов, логика победы/проигрыша.
+          </p>
+          <div class="project-meta">
+            <span>JavaScript · CSS</span>
+            <span>Game logic</span>
+            <span>State management</span>
+          </div>
+          <a class="project-link" href="https://ir4d.github.io/minesweeper" target="_blank" rel="noreferrer">
+            Live →
+          </a>
+        </li>
+
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">Virtual Keyboard</h3>
+            <span class="project-pill">UI-компонент</span>
+          </div>
+          <p class="project-tagline">
+            Виртуальная клавиатура на JavaScript с раскладками en/ru, обработкой нажатий и
+            визуальной индикацией клавиш.
+          </p>
+          <div class="project-meta">
+            <span>JavaScript</span>
+            <span>Keyboard events</span>
+            <span>Accessibility‑friendly UI</span>
+          </div>
+          <a class="project-link" href="https://ir4d.github.io/virtual-keyboard" target="_blank" rel="noreferrer">
+            Live →
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section scroll-animate" id="education">
+      <p class="section-title">Образование</p>
+      <h2 class="section-heading">Образование и интенсивные программы</h2>
+      <ul class="education-list">
+        <li class="education-entry">
+          <h3 class="education-title">Hellenic Open University, Греция</h3>
+          <p class="education-meta">2024 – настоящее время · Магистратура по направлению «Информационные системы»</p>
+          <p class="education-detail">
+            Магистратура с фокусом на информационные системы, архитектуры и принципы разработки ПО.
+          </p>
+        </li>
+        <li class="education-entry">
+          <h3 class="education-title">The Rolling Scopes School</h3>
+          <p class="education-meta">2024 · React</p>
+          <p class="education-meta">2023 · JavaScript</p>
+          <p class="education-detail">
+            Интенсивные практико-ориентированные курсы с реальными проектами, code review и фокусом на современный frontend-стек.
+          </p>
+        </li>
+        <li class="education-entry">
+          <h3 class="education-title">Университет ИТМО, Россия</h3>
+          <p class="education-meta">2022 · Профессиональная переподготовка «Веб-разработчик» </p>
+        </li>
+        <li class="education-entry">
+          <h3 class="education-title">
+            СПб Политехнический университет Петра Великого, Россия
+          </h3>
+          <p class="education-meta">2012 · Бакалавриат и магистратура по направлению «Экономика»</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section scroll-animate" id="languages">
+      <p class="section-title">Languages</p>
+      <ul class="lang-list">
+        <li class="lang-item">
+          <span class="lang-name">Русский</span>
+          <span class="lang-level">Родной</span>
+        </li>
+        <li class="lang-item">
+          <span class="lang-name">Английский</span>
+          <span class="lang-level">B2 · Cambridge English: First</span>
+        </li>
+        <li class="lang-item">
+          <span class="lang-name">Греческий</span>
+          <span class="lang-level">B2 · Certificate of Attainment in Greek</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section scroll-animate" id="contact">
+      <p class="section-title">Контакты</p>
+      <h2 class="section-heading">Давайте работать вместе</h2>
+      <p class="section-subheading">
+        Открыта к удаленным позициям frontend-разработчика и интересным side-проектам
+      </p>
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-list">
+            <li>
+              <strong>Стэк:</strong> HTML, CSS/SCSS, JavaScript, TypeScript, React, SPA architectures, REST APIs.
+            </li>
+            <li>
+              <strong>Фокус:</strong> продуктовый фронтенд, поддерживаемый код, UX и понятная архитектура.
+            </li>
+            <li>
+              <strong>Формат:</strong> удаленная работа · европейские часовые пояса · английский / русский / греческий.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:iradedova@gmail.com">
+              ✉ Email
+            </a>
+            <a class="contact-link" href="https://github.com/Ir4D" target="_blank" rel="noreferrer">
+              🐙 GitHub
+            </a>
+            <a class="contact-link" href="https://t.me/irinkad" target="_blank" rel="noreferrer">
+              ✈ Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Ирина Дедова. Все права защищены.</span>
+      <a class="footer-link" href="#top">Наверх ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    (function setYear() {
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear().toString();
+      }
+    })();
+
+    (function initScrollAnimation() {
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+            }
+          });
+        },
+        { rootMargin: "0px 0px -60px 0px", threshold: 0.1 }
+      );
+      document.querySelectorAll(".scroll-animate").forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
 </body>
 </html>
