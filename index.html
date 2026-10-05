@@ -19,9 +19,22 @@
           <div class="header-badges">
             <span class="badge" data-i18n="badgeRemote">Remote work</span>
           </div>
-          <div class="lang-switch" role="group" data-i18n-aria="langSwitchAria" aria-label="Site language">
-            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
-            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <div class="control-group">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch to light theme">
+              <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.2"></circle>
+                <g stroke="currentColor" stroke-linecap="round">
+                  <path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"></path>
+                </g>
+              </svg>
+              <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.2 14.8A7.2 7.2 0 0 1 9.2 5.8a7.4 7.4 0 1 0 9 9Z"></path>
+              </svg>
+            </button>
+            <div class="lang-switch" role="group" data-i18n-aria="langSwitchAria" aria-label="Site language">
+              <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+              <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            </div>
           </div>
         </div>
       </div>
@@ -66,6 +79,9 @@
             <h3 class="work-title" data-i18n="martspecRole">Frontend Developer | Martspec</h3>
             <p class="education-meta" data-i18n="martspecDates">Sep 2026 – Present</p>
           </div>
+          <p data-i18n="martspecText">
+            Martspec is a product company developing health and wellness apps with a focus on simple tracking, privacy, and Apple Health integration.
+          </p>
           <p>
             <ul class="bullet-list">
               <li data-i18n="martspec1">Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.</li>

@@ -5,6 +5,8 @@ const translations = {
       "Portfolio of frontend developer Irina Dedova: commercial and educational projects, education, languages, and tech stack.",
     navAria: "Primary",
     langSwitchAria: "Site language",
+    themeToggleToLight: "Switch to light theme",
+    themeToggleToDark: "Switch to dark theme",
     subtitle: "Frontend Developer · HTML · CSS/SCSS · JavaScript · React · TypeScript",
     badgeRemote: "Remote work",
     navProjects: "Projects",
@@ -24,6 +26,7 @@ const translations = {
     expHeading: "Work and commercial projects",
     martspecRole: "Frontend Developer | Martspec",
     martspecDates: "Sep 2026 – Present",
+    martspecText: "Martspec is a product company developing health and wellness apps with a focus on simple tracking, privacy, and Apple Health integration.",
     martspec1:
       "Implemented new articles using the existing React/TypeScript article template and JSON-based content system.",
     martspec2:
@@ -97,6 +100,8 @@ const translations = {
       "Портфолио frontend-разработчика Ирины Дедовой: коммерческие и учебные проекты, образование, языки и технологический стек.",
     navAria: "Основная навигация",
     langSwitchAria: "Язык сайта",
+    themeToggleToLight: "Переключить на светлую тему",
+    themeToggleToDark: "Переключить на тёмную тему",
     subtitle: "Frontend-разработчик · HTML · CSS/SCSS · JavaScript · React · TypeScript",
     badgeRemote: "Удаленный формат работы",
     navProjects: "Проекты",
@@ -115,7 +120,8 @@ const translations = {
     expKicker: "Коммерческий опыт",
     expHeading: "Работа и коммерческие проекты",
     martspecRole: "Frontend-разработчик | Martspec",
-    martspecDates: "сентябрь 2026 – настоящее время",
+    martspecDates: "сентябрь 2026 - настоящее время",
+    martspecText: "Martspec - продуктовая компания, разрабатывающая приложения для здоровья и wellness с акцентом на удобный трекинг, конфиденциальность и интеграцию с Apple Health.",
     martspec1:
       "Реализовывала новые статьи по существующему шаблону React/TypeScript и системе контента на JSON.",
     martspec2:
@@ -186,11 +192,44 @@ const translations = {
 };
 
 const LANG_KEY = "portfolio-lang";
+const THEME_KEY = "portfolio-theme";
+
+function getInitialTheme() {
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === "light" || saved === "dark") return saved;
+
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+    return "light";
+  }
+
+  return "dark";
+}
 
 function getInitialLang() {
   const saved = localStorage.getItem(LANG_KEY);
   if (saved === "ru" || saved === "en") return saved;
   return navigator.language.toLowerCase().startsWith("ru") ? "ru" : "en";
+}
+
+function applyTheme(theme) {
+  const selectedTheme = theme === "light" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", selectedTheme);
+  localStorage.setItem(THEME_KEY, selectedTheme);
+
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (!toggle) return;
+
+  const dict = translations[document.documentElement.lang] || translations.en;
+  const isLightTheme = selectedTheme === "light";
+  toggle.dataset.themeState = selectedTheme;
+  toggle.setAttribute(
+    "aria-label",
+    isLightTheme ? dict.themeToggleToDark : dict.themeToggleToLight
+  );
+  toggle.setAttribute(
+    "title",
+    isLightTheme ? dict.themeToggleToDark : dict.themeToggleToLight
+  );
 }
 
 function applyLanguage(lang) {
@@ -228,6 +267,7 @@ function applyLanguage(lang) {
   });
 
   localStorage.setItem(LANG_KEY, lang);
+  applyTheme(document.documentElement.getAttribute("data-theme") || getInitialTheme());
 }
 
 function scrollToSection(id) {
@@ -275,10 +315,22 @@ function initScrollButtons() {
   });
 }
 
+function initThemeSwitch() {
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", function () {
+    const nextTheme = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(nextTheme);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  applyTheme(getInitialTheme());
   applyLanguage(getInitialLang());
   setYear();
   initLanguageSwitch();
   initScrollButtons();
+  initThemeSwitch();
   initScrollAnimation();
 });
