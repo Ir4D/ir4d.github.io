@@ -25,23 +25,18 @@ const translations = {
     martspecRole: "Frontend Developer | Martspec",
     martspecDates: "Sep 2026 – Present",
     martspec1:
-      "Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.",
-    martspec2:
       "Implemented new articles using the existing React/TypeScript article template and JSON-based content system.",
-    martspec3:
+    martspec2:
       "Maintained localized article content and navigation, fixing internal links in language-specific templates and verifying that the correct localized content and assets were used for each site version.",
+    martspec3:
+      "Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.",
     martspec4:
       "Optimized image assets and migrated them to more efficient web formats, updating references across the codebase and resolving image-related issues.",
     martspec5:
       "Worked with GitHub, Jira, and Slack as part of a distributed development team: managed feature branches and pull requests, tracked tasks on a Jira Kanban board, communicated progress and questions in Slack, and moved work through review, QA, and deployment.",
     forosTitle: "Corporate Website for an Accounting Firm (in active development)",
-    foros1:
-      "Full-cycle development for a Greek accounting firm: design, markup, integrations, and deployment.",
-    foros2:
-      "Independently designed the UI and implemented it in React with a responsive layout (Flexbox / Grid).",
-    foros3: "Built a contact form with validation.",
-    foros4:
-      "Integrated WordPress via REST API as a headless CMS, so the client can manage content without a developer.",
+    forosText: 
+      "A responsive corporate website for a Greek accounting firm, designed and developed end to end in React. Includes a validated contact form and WordPress REST API integration as a headless CMS, allowing the client to manage content independently.",
     expTitle: "One-page teacher portfolio website",
     expSubtitle: "Full development cycle: from Figma mockup to deploy",
     expText:
@@ -54,9 +49,7 @@ const translations = {
     projectsTitle: "Projects",
     projectsSubtitle: "Educational projects focused on UX and code quality",
     duckPill: "Browser 2D game",
-    duck1: "Browser-based 2D game with a menu, intro scene, pause state, and win/lose flow.",
-    duck2: "Stores top results in localStorage.",
-    duck3: "Built UI and graphics with the HTML Canvas API and DOM.",
+    duckTagline: "A browser-based 2D game with a menu, intro scene, pause state, win/lose flow, and locally stored high scores. Built with TypeScript, HTML5 Canvas, and DOM APIs.",
     ecomTagline:
       "An online store with authentication, search, filters, a shopping cart, and checkout. Built with a REST API and the CommerceTools platform.",
     metaTeam: "Team development · Code review",
@@ -95,7 +88,7 @@ const translations = {
       "<strong>Focus:</strong> product frontend, maintainable code, UX, and clear architecture.",
     contactFormat:
       "<strong>Format:</strong> remote · European time zones · English / Russian / Greek.",
-    footerCopy: "Irina Dedova. All rights reserved.",
+    footerCopy: "Irina Dedova",
     footerTop: "Back to top ↑",
   },
   ru: {
@@ -124,23 +117,18 @@ const translations = {
     martspecRole: "Frontend-разработчик | Martspec",
     martspecDates: "сентябрь 2026 – настоящее время",
     martspec1:
-      "Добавляла и обновляла примеры UI-компонентов в Ladle, используя те же props, данные и провайдеры, что и на продакшен-страницах.",
-    martspec2:
       "Реализовывала новые статьи по существующему шаблону React/TypeScript и системе контента на JSON.",
-    martspec3:
+    martspec2:
       "Поддерживала локализованный контент статей и навигацию: исправляла внутренние ссылки в языковых шаблонах и проверяла, что для каждой версии сайта используются корректные локализованные тексты и ресурсы.",
+    martspec3:
+      "Добавляла и обновляла примеры UI-компонентов в Ladle, используя те же props, данные и провайдеры, что и на продакшен-страницах.",
     martspec4:
       "Оптимизировала изображения и перевела их в более эффективные веб-форматы, обновила ссылки по кодовой базе и устранила проблемы, связанные с картинками.",
     martspec5:
       "Работала в распределённой команде с GitHub, Jira и Slack: вела feature-ветки и pull request'ы, отслеживала задачи на Kanban-доске в Jira, обсуждала прогресс и вопросы в Slack, проводила работу через ревью, QA и деплой.",
     forosTitle: "Корпоративный сайт бухгалтерской компании (в активной разработке)",
-    foros1:
-      "Полный цикл разработки для греческой бухгалтерской фирмы: дизайн, вёрстка, интеграции и деплой.",
-    foros2:
-      "Самостоятельно спроектировала UI и реализовала его на React с адаптивной вёрсткой (Flexbox / Grid).",
-    foros3: "Собрала форму обратной связи с валидацией.",
-    foros4:
-      "Интегрировала WordPress через REST API как headless CMS, чтобы клиент мог управлять контентом без разработчика.",
+    forosText: 
+      "Адаптивный корпоративный сайт для греческой бухгалтерской фирмы, полностью спроектированный и разработанный на React. Включает контактную форму с валидацией и интеграцию с WordPress REST API в качестве headless CMS, что позволяет клиенту самостоятельно управлять контентом.",
     expTitle: "Одностраничный сайт-портфолио преподавателя",
     expSubtitle: "Полный цикл разработки: от макета в Figma до деплоя",
     expText:
@@ -153,9 +141,7 @@ const translations = {
     projectsTitle: "Проекты",
     projectsSubtitle: "Учебные проекты — с фокусом на UX и качество кода",
     duckPill: "Браузерная 2D-игра",
-    duck1: "Браузерная 2D-игра с меню, вступительной сценой, паузой и сценариями победы/проигрыша.",
-    duck2: "Сохраняет лучшие результаты в localStorage.",
-    duck3: "UI и графика реализованы через HTML Canvas API и DOM.",
+    duckTagline: "Браузерная 2D-игра с меню, вступительной сценой, паузой, сценариями победы и поражения, а также локальным хранением лучших результатов. Разработана с использованием TypeScript, HTML5 Canvas и DOM API.",
     ecomTagline:
       "Интернет-магазин с авторизацией, поиском, фильтрами, корзиной и оформлением заказа. Работа с REST API и платформой CommerceTools.",
     metaTeam: "Командная разработка · Code review",
@@ -194,7 +180,7 @@ const translations = {
       "<strong>Фокус:</strong> продуктовый фронтенд, поддерживаемый код, UX и понятная архитектура.",
     contactFormat:
       "<strong>Формат:</strong> удаленная работа · европейские часовые пояса · английский / русский / греческий.",
-    footerCopy: "Ирина Дедова. Все права защищены.",
+    footerCopy: "Ирина Дедова",
     footerTop: "Наверх ↑",
   },
 };

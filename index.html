@@ -28,8 +28,8 @@
     </header>
 
     <nav class="nav" data-i18n-aria="navAria" aria-label="Primary">
-      <a class="nav-link nav-link-primary" href="#projects" data-i18n="navProjects">Projects</a>
-      <a class="nav-link" href="#experience" data-i18n="navExperience">Experience</a>
+      <a class="nav-link nav-link-primary" href="#experience" data-i18n="navExperience">Experience</a>
+      <a class="nav-link" href="#projects" data-i18n="navProjects">Projects</a>
       <a class="nav-link" href="#education" data-i18n="navEducation">Education</a>
       <a class="nav-link" href="#languages" data-i18n="navLanguages">Languages</a>
       <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
@@ -47,7 +47,7 @@
           <span class="hero-tag" data-i18n-html="tagTools"><strong>Tools:</strong> REST API · Jest · Git · Figma</span>
         </div>
         <div class="hero-actions">
-          <button class="btn btn-primary" type="button" data-scroll="projects" data-i18n="btnProjects">
+          <button class="btn btn-primary" type="button" data-scroll="experience" data-i18n="btnProjects">
             View projects →
           </button>
           <button class="btn btn-secondary" type="button" data-scroll="contact" data-i18n="btnContact">
@@ -66,35 +66,35 @@
             <h3 class="work-title" data-i18n="martspecRole">Frontend Developer | Martspec</h3>
             <p class="education-meta" data-i18n="martspecDates">Sep 2026 – Present</p>
           </div>
+          <p>
+            <ul class="bullet-list">
+              <li data-i18n="martspec1">Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.</li>
+              <li data-i18n="martspec2">Implemented new articles using the existing React/TypeScript article template and JSON-based content system.</li>
+              <li data-i18n="martspec3">Maintained localized article content and navigation, fixing internal links in language-specific templates and verifying that the correct localized content and assets were used for each site version.</li>
+              <li data-i18n="martspec4">Optimized image assets and migrated them to more efficient web formats, updating references across the codebase and resolving image-related issues.</li>
+              <li data-i18n="martspec5">Worked with GitHub, Jira, and Slack as part of a distributed development team: managed feature branches and pull requests, tracked tasks on a Jira Kanban board, communicated progress and questions in Slack, and moved work through review, QA, and deployment.</li>
+            </ul>
+          </p>
           <div class="project-meta">
             <span>React · TypeScript · SCSS</span>
             <span>Ladle · i18n</span>
             <span>GitHub · Jira · Figma · Slack</span>
           </div>
-          <ul class="bullet-list">
-            <li data-i18n="martspec1">Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.</li>
-            <li data-i18n="martspec2">Implemented new articles using the existing React/TypeScript article template and JSON-based content system.</li>
-            <li data-i18n="martspec3">Maintained localized article content and navigation, fixing internal links in language-specific templates and verifying that the correct localized content and assets were used for each site version.</li>
-            <li data-i18n="martspec4">Optimized image assets and migrated them to more efficient web formats, updating references across the codebase and resolving image-related issues.</li>
-            <li data-i18n="martspec5">Worked with GitHub, Jira, and Slack as part of a distributed development team: managed feature branches and pull requests, tracked tasks on a Jira Kanban board, communicated progress and questions in Slack, and moved work through review, QA, and deployment.</li>
-          </ul>
+          <a class="project-link" href="https://martspec.com/" target="_blank" rel="noreferrer">Website →</a>
         </li>
 
         <li class="work-entry">
           <div class="work-heading-row">
             <h3 class="work-title" data-i18n="forosTitle">Corporate Website for an Accounting Firm (in active development)</h3>
           </div>
+          <p data-i18n="forosText">
+            A responsive corporate website for a Greek accounting firm, designed and developed end to end in React. Includes a validated contact form and WordPress REST API integration as a headless CMS, allowing the client to manage content independently.
+          </p>
           <div class="project-meta">
             <span>React · HTML · CSS</span>
             <span>WordPress REST API</span>
           </div>
-          <ul class="bullet-list">
-            <li data-i18n="foros1">Full-cycle development for a Greek accounting firm: design, markup, integrations, and deployment.</li>
-            <li data-i18n="foros2">Independently designed the UI and implemented it in React with a responsive layout (Flexbox / Grid).</li>
-            <li data-i18n="foros3">Built a contact form with validation.</li>
-            <li data-i18n="foros4">Integrated WordPress via REST API as a headless CMS, so the client can manage content without a developer.</li>
-          </ul>
-          <a class="project-link" href="https://e-foros.netlify.app/" target="_blank" rel="noreferrer">Live →</a>
+          <a class="project-link" href="https://e-foros.netlify.app/" target="_blank" rel="noreferrer">Website →</a>
         </li>
 
         <li class="work-entry">
@@ -112,7 +112,7 @@
             <span data-i18n="metaForm">Contact form</span>
           </div>
           <a class="project-link" href="https://greekandenglish.com/" data-i18n="expLink">
-            Teacher portfolio website →
+            Website →
           </a>
         </li>
       </ul>
@@ -128,16 +128,14 @@
             <h3 class="project-title">Mini Duck Game</h3>
             <span class="project-pill" data-i18n="duckPill">Browser 2D game</span>
           </div>
+          <p class="project-tagline" data-i18n="duckTagline">
+            A browser-based 2D game with a menu, intro scene, pause state, win/lose flow, and locally stored high scores. Built with TypeScript, HTML5 Canvas, and DOM APIs.
+          </p>
           <div class="project-meta">
             <span>TypeScript · Vite</span>
             <span>HTML5 Canvas</span>
             <span>ESLint · Prettier</span>
           </div>
-          <ul class="bullet-list">
-            <li data-i18n="duck1">Browser-based 2D game with a menu, intro scene, pause state, and win/lose flow.</li>
-            <li data-i18n="duck2">Stores top results in localStorage.</li>
-            <li data-i18n="duck3">Built UI and graphics with the HTML Canvas API and DOM.</li>
-          </ul>
           <a class="project-link" href="https://duck-mini-game.netlify.app/" target="_blank" rel="noreferrer">
             Live →
           </a>
@@ -260,7 +258,7 @@
         </li>
         <li class="lang-item">
           <span class="lang-name" data-i18n="langEn">English</span>
-          <span class="lang-level">B2 · Cambridge English: First</span>
+          <span class="lang-level">C1 · Cambridge English: Advanced</span>
         </li>
         <li class="lang-item">
           <span class="lang-name" data-i18n="langEl">Greek</span>
