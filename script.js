@@ -13,16 +13,35 @@ const translations = {
     navLanguages: "Languages",
     navContact: "Contact",
     heroTitle: "About me",
-    heroText1:
-      'I am a frontend developer with commercial experience and educational projects, including SPAs and sites with API integrations. I work confidently with <strong>HTML, CSS/SCSS, and JavaScript</strong>, build client applications with <strong>React + TypeScript</strong>, and pay close attention to layout quality and responsiveness.',
-    heroText2:
-      "I am currently pursuing a master's degree in Information Systems. I adapt quickly to new tasks and value teamwork and continuous learning. My previous professional background helps me take ownership of the work and consider both the technical and the product side.",
+    heroText:
+      "Frontend Developer with hands-on experience building responsive interfaces and SPAs with React, TypeScript, JavaScript, HTML5, and CSS. Experienced with Git, REST APIs, Webpack/Vite, asynchronous JavaScript, and basic testing with Jest; project work includes commercial websites, a team-built e-commerce SPA, and browser applications. Currently pursuing an MSc in Information Systems, with a prior background in banking compliance that shaped a strong sense of accuracy and responsibility.",
     tagCore: "<strong>Core:</strong> HTML · CSS (SCSS) · JavaScript · TypeScript",
     tagFrameworks: "<strong>Frameworks:</strong> React",
-    tagTools: "<strong>Tools:</strong> REST API · Jest · Git · Figma",
+    tagTools: "<strong>Tools:</strong> REST API · Jest · Git · Figma · Webpack/Vite",
     btnProjects: "View projects →",
     btnContact: "Get in touch",
     expKicker: "Commercial experience",
+    expHeading: "Work and commercial projects",
+    martspecRole: "Frontend Developer | Martspec",
+    martspecDates: "Sep 2026 – Present",
+    martspec1:
+      "Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.",
+    martspec2:
+      "Implemented new articles using the existing React/TypeScript article template and JSON-based content system.",
+    martspec3:
+      "Maintained localized article content and navigation, fixing internal links in language-specific templates and verifying that the correct localized content and assets were used for each site version.",
+    martspec4:
+      "Optimized image assets and migrated them to more efficient web formats, updating references across the codebase and resolving image-related issues.",
+    martspec5:
+      "Worked with GitHub, Jira, and Slack as part of a distributed development team: managed feature branches and pull requests, tracked tasks on a Jira Kanban board, communicated progress and questions in Slack, and moved work through review, QA, and deployment.",
+    forosTitle: "Corporate Website for an Accounting Firm (in active development)",
+    foros1:
+      "Full-cycle development for a Greek accounting firm: design, markup, integrations, and deployment.",
+    foros2:
+      "Independently designed the UI and implemented it in React with a responsive layout (Flexbox / Grid).",
+    foros3: "Built a contact form with validation.",
+    foros4:
+      "Integrated WordPress via REST API as a headless CMS, so the client can manage content without a developer.",
     expTitle: "One-page teacher portfolio website",
     expSubtitle: "Full development cycle: from Figma mockup to deploy",
     expText:
@@ -34,6 +53,10 @@ const translations = {
     projectsKicker: "Selected work",
     projectsTitle: "Projects",
     projectsSubtitle: "Educational projects focused on UX and code quality",
+    duckPill: "Browser 2D game",
+    duck1: "Browser-based 2D game with a menu, intro scene, pause state, and win/lose flow.",
+    duck2: "Stores top results in localStorage.",
+    duck3: "Built UI and graphics with the HTML Canvas API and DOM.",
     ecomTagline:
       "An online store with authentication, search, filters, a shopping cart, and checkout. Built with a REST API and the CommerceTools platform.",
     metaTeam: "Team development · Code review",
@@ -46,9 +69,6 @@ const translations = {
     minesweeperPill: "Browser game",
     minesweeperTagline:
       "A Minesweeper browser game in JavaScript and CSS: mine and board generation, a timer, a flag system, and win/lose logic.",
-    keyboardPill: "UI component",
-    keyboardTagline:
-      "A virtual keyboard in JavaScript with en/ru layouts, key press handling, and visual key highlighting.",
     eduKicker: "Education",
     eduTitle: "Education and intensive programs",
     houTitle: "Hellenic Open University, Greece",
@@ -92,16 +112,35 @@ const translations = {
     navLanguages: "Языки",
     navContact: "Контакты",
     heroTitle: "Обо мне",
-    heroText1:
-      "Я frontend-разработчик с опытом коммерческой разработки и учебными проектами, включая SPA и сайты с API-интеграциями. Уверенно работаю с <strong>HTML, CSS/SCSS и JavaScript</strong>, разрабатываю клиентские приложения на <strong>React + TypeScript</strong>, внимательно отношусь к верстке и адаптивности.",
-    heroText2:
-      "Сейчас обучаюсь в магистратуре по направлению «Информационные системы». Я легко адаптируюсь к новым задачам, ценю командную работу и постоянное развитие. Предыдущий профессиональный опыт помогает мне ответственно подходить к работе и учитывать не только техническую, но и продуктовую составляющую.",
+    heroText:
+      "Frontend-разработчик с практическим опытом создания адаптивных интерфейсов и SPA на React, TypeScript, JavaScript, HTML5 и CSS. Работаю с Git, REST API, Webpack/Vite, асинхронным JavaScript и базовым тестированием на Jest; среди проектов — коммерческие сайты, командный e-commerce SPA и браузерные приложения. Сейчас обучаюсь в магистратуре по направлению «Информационные системы»; предыдущий опыт в банковском комплаенсе сформировал высокий уровень точности и ответственности.",
     tagCore: "<strong>Основы:</strong> HTML · CSS (SCSS) · JavaScript · TypeScript",
     tagFrameworks: "<strong>Фреймворки:</strong> React",
-    tagTools: "<strong>Инструменты:</strong> REST API · Jest · Git · Figma",
+    tagTools: "<strong>Инструменты:</strong> REST API · Jest · Git · Figma · Webpack/Vite",
     btnProjects: "Смотреть проекты →",
     btnContact: "Связаться со мной",
     expKicker: "Коммерческий опыт",
+    expHeading: "Работа и коммерческие проекты",
+    martspecRole: "Frontend-разработчик | Martspec",
+    martspecDates: "сентябрь 2026 – настоящее время",
+    martspec1:
+      "Добавляла и обновляла примеры UI-компонентов в Ladle, используя те же props, данные и провайдеры, что и на продакшен-страницах.",
+    martspec2:
+      "Реализовывала новые статьи по существующему шаблону React/TypeScript и системе контента на JSON.",
+    martspec3:
+      "Поддерживала локализованный контент статей и навигацию: исправляла внутренние ссылки в языковых шаблонах и проверяла, что для каждой версии сайта используются корректные локализованные тексты и ресурсы.",
+    martspec4:
+      "Оптимизировала изображения и перевела их в более эффективные веб-форматы, обновила ссылки по кодовой базе и устранила проблемы, связанные с картинками.",
+    martspec5:
+      "Работала в распределённой команде с GitHub, Jira и Slack: вела feature-ветки и pull request'ы, отслеживала задачи на Kanban-доске в Jira, обсуждала прогресс и вопросы в Slack, проводила работу через ревью, QA и деплой.",
+    forosTitle: "Корпоративный сайт бухгалтерской компании (в активной разработке)",
+    foros1:
+      "Полный цикл разработки для греческой бухгалтерской фирмы: дизайн, вёрстка, интеграции и деплой.",
+    foros2:
+      "Самостоятельно спроектировала UI и реализовала его на React с адаптивной вёрсткой (Flexbox / Grid).",
+    foros3: "Собрала форму обратной связи с валидацией.",
+    foros4:
+      "Интегрировала WordPress через REST API как headless CMS, чтобы клиент мог управлять контентом без разработчика.",
     expTitle: "Одностраничный сайт-портфолио преподавателя",
     expSubtitle: "Полный цикл разработки: от макета в Figma до деплоя",
     expText:
@@ -113,6 +152,10 @@ const translations = {
     projectsKicker: "Избранные проекты",
     projectsTitle: "Проекты",
     projectsSubtitle: "Учебные проекты — с фокусом на UX и качество кода",
+    duckPill: "Браузерная 2D-игра",
+    duck1: "Браузерная 2D-игра с меню, вступительной сценой, паузой и сценариями победы/проигрыша.",
+    duck2: "Сохраняет лучшие результаты в localStorage.",
+    duck3: "UI и графика реализованы через HTML Canvas API и DOM.",
     ecomTagline:
       "Интернет-магазин с авторизацией, поиском, фильтрами, корзиной и оформлением заказа. Работа с REST API и платформой CommerceTools.",
     metaTeam: "Командная разработка · Code review",
@@ -125,9 +168,6 @@ const translations = {
     minesweeperPill: "Браузерная игра",
     minesweeperTagline:
       "Браузерная игра «Сапер» на JavaScript и CSS: генерация мин и игрового поля, таймер, система флагов, логика победы/проигрыша.",
-    keyboardPill: "UI-компонент",
-    keyboardTagline:
-      "Виртуальная клавиатура на JavaScript с раскладками en/ru, обработкой нажатий и визуальной индикацией клавиш.",
     eduKicker: "Образование",
     eduTitle: "Образование и интенсивные программы",
     houTitle: "Hellenic Open University, Греция",
