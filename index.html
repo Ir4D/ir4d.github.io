@@ -19,17 +19,30 @@
           <div class="header-badges">
             <span class="badge" data-i18n="badgeRemote">Remote work</span>
           </div>
-          <div class="lang-switch" role="group" data-i18n-aria="langSwitchAria" aria-label="Site language">
-            <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
-            <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <div class="control-group">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch to light theme">
+              <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.2"></circle>
+                <g stroke="currentColor" stroke-linecap="round">
+                  <path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"></path>
+                </g>
+              </svg>
+              <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.2 14.8A7.2 7.2 0 0 1 9.2 5.8a7.4 7.4 0 1 0 9 9Z"></path>
+              </svg>
+            </button>
+            <div class="lang-switch" role="group" data-i18n-aria="langSwitchAria" aria-label="Site language">
+              <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+              <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <nav class="nav" data-i18n-aria="navAria" aria-label="Primary">
-      <a class="nav-link nav-link-primary" href="#projects" data-i18n="navProjects">Projects</a>
-      <a class="nav-link" href="#experience" data-i18n="navExperience">Experience</a>
+      <a class="nav-link nav-link-primary" href="#experience" data-i18n="navExperience">Experience</a>
+      <a class="nav-link" href="#projects" data-i18n="navProjects">Projects</a>
       <a class="nav-link" href="#education" data-i18n="navEducation">Education</a>
       <a class="nav-link" href="#languages" data-i18n="navLanguages">Languages</a>
       <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
@@ -38,11 +51,8 @@
     <section class="hero scroll-animate">
       <div>
         <h2 class="hero-title" data-i18n="heroTitle">About me</h2>
-        <p class="hero-text" data-i18n-html="heroText1">
-          I am a frontend developer with commercial experience and educational projects, including SPAs and sites with API integrations. I work confidently with <strong>HTML, CSS/SCSS, and JavaScript</strong>, build client applications with <strong>React + TypeScript</strong>, and pay close attention to layout quality and responsiveness.
-        </p>
-        <p class="hero-text" data-i18n-html="heroText2">
-          I am currently pursuing a master's degree in Information Systems. I adapt quickly to new tasks and value teamwork and continuous learning. My previous professional background helps me take ownership of the work and consider both the technical and the product side.
+        <p class="hero-text" data-i18n="heroText">
+          Frontend Developer with hands-on experience building responsive interfaces and SPAs with React, TypeScript, JavaScript, HTML5, and CSS. Experienced with Git, REST APIs, Webpack/Vite, asynchronous JavaScript, and basic testing with Jest; project work includes commercial websites, a team-built e-commerce SPA, and browser applications. Currently pursuing an MSc in Information Systems, with a prior background in banking compliance that shaped a strong sense of accuracy and responsibility.
         </p>
         <div class="hero-tags">
           <span class="hero-tag" data-i18n-html="tagCore"><strong>Core:</strong> HTML · CSS (SCSS) · JavaScript · TypeScript</span>
@@ -50,7 +60,7 @@
           <span class="hero-tag" data-i18n-html="tagTools"><strong>Tools:</strong> REST API · Jest · Git · Figma</span>
         </div>
         <div class="hero-actions">
-          <button class="btn btn-primary" type="button" data-scroll="projects" data-i18n="btnProjects">
+          <button class="btn btn-primary" type="button" data-scroll="experience" data-i18n="btnProjects">
             View projects →
           </button>
           <button class="btn btn-secondary" type="button" data-scroll="contact" data-i18n="btnContact">
@@ -62,22 +72,66 @@
 
     <section class="section scroll-animate" id="experience">
       <p class="section-title" data-i18n="expKicker">Commercial experience</p>
-      <h2 class="section-heading" data-i18n="expTitle">One-page teacher portfolio website</h2>
-      <p class="section-subheading" data-i18n="expSubtitle">Full development cycle: from Figma mockup to deploy</p>
-      <p data-i18n="expText">
-        A responsive landing page with language switching (en/ru), a contact form, and smooth navigation. Full cycle: working from a Figma mockup, layout, JavaScript logic, and deploy.
-      </p>
-      <div class="project-meta" style="margin-top: 16px;">
-        <span>HTML · SCSS · JavaScript</span>
-        <span data-i18n="metaResponsive">Responsive layout</span>
-        <span data-i18n="metaI18n">i18n (ru/en)</span>
-        <span data-i18n="metaForm">Contact form</span>
-      </div>
-      <div style="margin-top: 16px;">
-        <a class="project-link" href="https://greekandenglish.com/" data-i18n="expLink">
-          Teacher portfolio website →
-        </a>
-      </div>
+      <h2 class="section-heading" data-i18n="expHeading">Work and commercial projects</h2>
+      <ul class="work-list">
+        <li class="work-entry">
+          <div class="work-heading-row">
+            <h3 class="work-title" data-i18n="martspecRole">Frontend Developer | Martspec</h3>
+            <p class="education-meta" data-i18n="martspecDates">Sep 2026 – Present</p>
+          </div>
+          <p data-i18n="martspecText">
+            Martspec is a product company developing health and wellness apps with a focus on simple tracking, privacy, and Apple Health integration.
+          </p>
+          <p>
+            <ul class="bullet-list">
+              <li data-i18n="martspec1">Added and updated UI component examples in Ladle, using the same props, data, and providers as on production pages.</li>
+              <li data-i18n="martspec2">Implemented new articles using the existing React/TypeScript article template and JSON-based content system.</li>
+              <li data-i18n="martspec3">Maintained localized article content and navigation, fixing internal links in language-specific templates and verifying that the correct localized content and assets were used for each site version.</li>
+              <li data-i18n="martspec4">Optimized image assets and migrated them to more efficient web formats, updating references across the codebase and resolving image-related issues.</li>
+              <li data-i18n="martspec5">Worked with GitHub, Jira, and Slack as part of a distributed development team: managed feature branches and pull requests, tracked tasks on a Jira Kanban board, communicated progress and questions in Slack, and moved work through review, QA, and deployment.</li>
+            </ul>
+          </p>
+          <div class="project-meta">
+            <span>React · TypeScript · SCSS</span>
+            <span>Ladle · i18n</span>
+            <span>GitHub · Jira · Figma · Slack</span>
+          </div>
+          <a class="project-link" href="https://martspec.com/" target="_blank" rel="noreferrer">Website →</a>
+        </li>
+
+        <li class="work-entry">
+          <div class="work-heading-row">
+            <h3 class="work-title" data-i18n="forosTitle">Corporate Website for an Accounting Firm (in active development)</h3>
+          </div>
+          <p data-i18n="forosText">
+            A responsive corporate website for a Greek accounting firm, designed and developed end to end in React. Includes a validated contact form and WordPress REST API integration as a headless CMS, allowing the client to manage content independently.
+          </p>
+          <div class="project-meta">
+            <span>React · HTML · CSS</span>
+            <span>WordPress REST API</span>
+          </div>
+          <a class="project-link" href="https://e-foros.netlify.app/" target="_blank" rel="noreferrer">Website →</a>
+        </li>
+
+        <li class="work-entry">
+          <div class="work-heading-row">
+            <h3 class="work-title" data-i18n="expTitle">One-page teacher portfolio website</h3>
+          </div>
+          <p class="section-subheading" data-i18n="expSubtitle">Full development cycle: from Figma mockup to deploy</p>
+          <p data-i18n="expText">
+            A responsive landing page with language switching (en/ru), a contact form, and smooth navigation. Full cycle: working from a Figma mockup, layout, JavaScript logic, and deploy.
+          </p>
+          <div class="project-meta" style="margin-top: 16px;">
+            <span>HTML · SCSS · JavaScript</span>
+            <span data-i18n="metaResponsive">Responsive layout</span>
+            <span data-i18n="metaI18n">i18n (ru/en)</span>
+            <span data-i18n="metaForm">Contact form</span>
+          </div>
+          <a class="project-link" href="https://greekandenglish.com/" data-i18n="expLink">
+            Website →
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="section scroll-animate" id="projects">
@@ -85,6 +139,24 @@
       <h2 class="section-heading" data-i18n="projectsTitle">Projects</h2>
       <p class="section-subheading" data-i18n="projectsSubtitle">Educational projects focused on UX and code quality</p>
       <ul class="project-list">
+        <li class="project-item">
+          <div class="project-title-row">
+            <h3 class="project-title">Mini Duck Game</h3>
+            <span class="project-pill" data-i18n="duckPill">Browser 2D game</span>
+          </div>
+          <p class="project-tagline" data-i18n="duckTagline">
+            A browser-based 2D game with a menu, intro scene, pause state, win/lose flow, and locally stored high scores. Built with TypeScript, HTML5 Canvas, and DOM APIs.
+          </p>
+          <div class="project-meta">
+            <span>TypeScript · Vite</span>
+            <span>HTML5 Canvas</span>
+            <span>ESLint · Prettier</span>
+          </div>
+          <a class="project-link" href="https://duck-mini-game.netlify.app/" target="_blank" rel="noreferrer">
+            Live →
+          </a>
+        </li>
+
         <li class="project-item">
           <div class="project-title-row">
             <h3 class="project-title">eCommerce Application</h3>
@@ -158,23 +230,6 @@
           </a>
         </li>
 
-        <li class="project-item">
-          <div class="project-title-row">
-            <h3 class="project-title">Virtual Keyboard</h3>
-            <span class="project-pill" data-i18n="keyboardPill">UI component</span>
-          </div>
-          <p class="project-tagline" data-i18n="keyboardTagline">
-            A virtual keyboard in JavaScript with en/ru layouts, key press handling, and visual key highlighting.
-          </p>
-          <div class="project-meta">
-            <span>JavaScript</span>
-            <span>Keyboard events</span>
-            <span>Accessibility-friendly UI</span>
-          </div>
-          <a class="project-link" href="https://ir4d.github.io/virtual-keyboard" target="_blank" rel="noreferrer">
-            Live →
-          </a>
-        </li>
       </ul>
     </section>
 
@@ -219,7 +274,7 @@
         </li>
         <li class="lang-item">
           <span class="lang-name" data-i18n="langEn">English</span>
-          <span class="lang-level">B2 · Cambridge English: First</span>
+          <span class="lang-level">C1 · Cambridge English: Advanced</span>
         </li>
         <li class="lang-item">
           <span class="lang-name" data-i18n="langEl">Greek</span>
