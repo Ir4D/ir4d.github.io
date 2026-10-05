@@ -125,6 +125,47 @@ img {
   border-radius: 20px;
 }
 
+.header-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  background: var(--bg-light);
+  border-radius: 999px;
+}
+
+.lang-btn {
+  min-width: 44px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-light);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  color: var(--text);
+}
+
+.lang-btn-active {
+  background: var(--primary);
+  color: #1e2932;
+}
+
+.lang-btn-active:hover {
+  background: var(--primary-hover);
+  color: #1e2932;
+}
+
 /* Navigation */
 .nav {
   display: flex;
